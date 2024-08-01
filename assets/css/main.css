@@ -2210,3 +2210,36 @@ input, select, textarea {
 			}
 
 		}
+
+
+		.resource-items-padding {
+			padding-bottom:3%;
+			padding-top:3%;
+		}
+
+		.resource-text-container {
+			width: 75%;
+			word-wrap: break-word;
+			align-items: center;
+		}
+
+		.resource-p {
+			font-size: 0.9em;
+			line-height: 1.2;
+		}
+
+		.resource-a {
+			padding-top: 5%;
+			font-size: 0.7em;
+		}
+
+		.resource-h3 {
+			margin-top: 0%;
+			margin-bottom: -1%;
+		}
+
+		.resource-img {
+			width: 100%;
+			aspect-ratio: 16 / 12;
+			object-fit: cover;
+		}
