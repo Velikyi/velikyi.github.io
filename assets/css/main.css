@@ -2029,7 +2029,6 @@ input, select, textarea {
 					width: 17em;
 					height: 100%;
 					left: 4%;
-					object-fit: scale-down;
 				}
 
 					#main > .panel.intro .pic:before {
