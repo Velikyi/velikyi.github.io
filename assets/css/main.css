@@ -11,6 +11,31 @@
 	--main_dark: #1b1b1c;
 }
 
+/* Background container */
+.backgroundMain {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url('images/bg.png') no-repeat center center fixed;
+	background-size: cover; /* Ensure the background image covers the entire area */
+	z-index: -2; /* Keep it behind everything */
+  }
+  
+  /* Overlay (PNG image) */
+  .overlayMain {
+	position: fixed; /* Fix to viewport for consistent alignment */
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url('images/PetterKeys1.png') no-repeat top left; /* Align to the top-left of the page */
+	background-size: contain; /* Scale the overlay image to fit from top to bottom */
+	z-index: -1; /* Layer it above the background */
+  }  
+  
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -1309,13 +1334,13 @@ input, select, textarea {
 		box-sizing: inherit;
 	}
 
-	body {
+	/* body {
 		background-image: url("images/overlay.png"), url("images/bg.png");
 		background-repeat: repeat, no-repeat;
 		background-size: auto, 100% 100%;
 		background-attachment: fixed;
 		overflow-y: scroll;
-	}
+	} */
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 			-moz-animation: none !important;
@@ -1903,6 +1928,7 @@ input, select, textarea {
 		-webkit-transition: opacity 1s ease-in-out;
 		-ms-transition: opacity 1s ease-in-out;
 		transition: opacity 1s ease-in-out;
+		z-index: 1;
 	}
 
 		body.is-preload #wrapper {
@@ -1957,6 +1983,7 @@ input, select, textarea {
 		-webkit-transition: min-height 0.5s ease-in-out, max-height 0.5s ease-in-out;
 		-ms-transition: min-height 0.5s ease-in-out, max-height 0.5s ease-in-out;
 		transition: min-height 0.5s ease-in-out, max-height 0.5s ease-in-out;
+		left: 50%;
 	}
 
 		#main > .panel {
@@ -2168,6 +2195,9 @@ input, select, textarea {
 		text-align: center;
 		padding: 2em 0 0 0;
 		font-size: 0.75em;
+		bottom: 0;
+		right: 25%;
+		position: fixed;
 	}
 
 		#footer a {
