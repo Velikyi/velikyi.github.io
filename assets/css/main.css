@@ -33,7 +33,11 @@
 	height: 100%;
 	background: url('images/PetterKeys1.png') no-repeat top left; /* Align to the top-left of the page */
 	background-size: contain; /* Scale the overlay image to fit from top to bottom */
-	z-index: -1; /* Layer it above the background */
+	z-index: -1;
+	-moz-transition: opacity 0.25s ease-in-out;
+	-webkit-transition: opacity 0.25s ease-in-out;
+	-ms-transition: opacity 0.25s ease-in-out;
+	transition: opacity 0.25s ease-in-out; /* Layer it above the background */
 	}  
 
 
